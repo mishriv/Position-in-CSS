@@ -1,0 +1,14 @@
+1. position: relative;:
+
+-When you set an element's position to relative, it is positioned relative to its normal position in the document flow.
+-If you use properties like top, right, bottom, or left on a relatively positioned element, it will be shifted from its normal position but still occupy space in the document flow. Other elements will respect its original position, leaving a gap where it would have been.
+-Elements with relative positioning can be used as a reference point for absolutely positioned elements inside them. In other words, an absolutely positioned child element will be positioned relative to its closest parent with a non-static (non-default) position (e.g., relative, absolute, or fixed).
+-relative maintains its place in the document flow, and other elements consider its original position.
+
+
+2. position: absolute;:
+
+-When you set an element's position to absolute, it is positioned relative to its nearest positioned ancestor. If no positioned ancestor exists, it is positioned relative to the initial containing block, usually the viewport.
+-An element with absolute positioning is removed from the normal document flow, so it does not affect the layout or position of other elements. It overlaps other elements if they occupy the same space.
+-You can use top, right, bottom, or left properties to precisely control the position of an absolutely positioned element.
+-absolute is taken out of the document flow, positioned relative to its nearest positioned ancestor, and doesn't affect the layout of other elements.
